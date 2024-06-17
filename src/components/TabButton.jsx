@@ -1,6 +1,6 @@
 export function TabButton({ children, onSelect, isSelected }) {
-
-  return (
-    <button className={isSelected  && 'active'} onClick={onSelect}>{children}</button>
-  )
-}
+  let classBtn = isSelected ? 'active' : '';
+     return (
+       <button className={classBtn} onClick={onSelect}>{children}</button>
+     )
+   }
